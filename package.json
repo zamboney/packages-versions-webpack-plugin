@@ -1,0 +1,21 @@
+{
+  "name": "packages-versions-webpack-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "webpack --config ./dev/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamboney/packages-versions-webpack-plugin.git"
+  },
+  "keywords": [],
+  "author": "m08522 <m08522@dtventertainment.att.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zamboney/packages-versions-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/zamboney/packages-versions-webpack-plugin#readme",
+  "devDependencies": {}
+}

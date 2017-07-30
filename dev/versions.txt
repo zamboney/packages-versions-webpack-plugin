@@ -1,0 +1,4 @@
+Sun Jul 30 2017 09:37:49 GMT+0300 (Jerusalem Daylight Time)
+packages-versions-webpack-plugin@1.0.0 C:\packages-versions-webpack-plugin
+`-- (empty)
+
