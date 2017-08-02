@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "webpack --config ./dev/webpack.config.js"
+    "test": "webpack --config ./dev/webpack.config.js",
+    "patch": "git pull && npm version patch -m \"[Version] updating to a new patch version %s\" && git push && git push --tags && npm publish",
+    "minor": "git pull && npm version minor -m \"[Version] updating to a new minor version %s\" && git push && git push --tags && npm publish"
   },
   "repository": {
     "type": "git",
