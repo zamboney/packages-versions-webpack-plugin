@@ -1,9 +1,10 @@
 var PackagesVersionsPlugin = require('../index.js');
+var path = require('path');
 
 var webpackConfig = {
     entry: "./dev/entry.js",
     output: {
-        path: __dirname,
+        path: path.join(__dirname, '../dist'),
         filename: "bundle.js"
     },
     module: {

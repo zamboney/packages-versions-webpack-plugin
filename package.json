@@ -11,11 +11,10 @@
     "url": "git+https://github.com/zamboney/packages-versions-webpack-plugin.git"
   },
   "keywords": [],
-  "author": "m08522 <m08522@dtventertainment.att.com>",
+  "author": "zamboney <zamboney@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zamboney/packages-versions-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/zamboney/packages-versions-webpack-plugin#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/zamboney/packages-versions-webpack-plugin#readme"
 }
