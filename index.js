@@ -8,10 +8,15 @@ function PackagesVersionsPlugin(options) {
 
 PackagesVersionsPlugin.prototype.apply = function (compiler) {
     compiler.plugin('compile', function (a, b, c, d, e) {
-        let stdout = execSync('npm ls --depth=0 --prod=true || true', {
-            cwd: compiler.options.context,
-            stdio: [0]
-        });
+        let stdout;
+        try {
+            stdout = execSync('npm ls --depth=0 --prod=true', {
+                cwd: compiler.options.context,
+                stdio: [0]
+            });
+        } catch (e) {
+            stdout = e.stdout;
+        }
         let versionFile = path.join(compiler.options.context, compiler.options.entry.match(/(.*)\/.*\..*$/)[1], 'versions.txt');
         if (fs.existsSync(versionFile))
             fs.unlinkSync(versionFile);
