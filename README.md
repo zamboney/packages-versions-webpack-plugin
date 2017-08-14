@@ -33,6 +33,10 @@ this plugin can be using in the code using `raw-loader` like so
 
 # version releases
 
+## 1.0.3 
+
+* add support to Angular2, if there is an `entry.app` then put the `version.txt` there.
+
 ## 1.0.2
 
 * use try and catch in the creating of the `version.txt` in order to dismiss `npm ls` error like peer dependencies
