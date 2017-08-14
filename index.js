@@ -17,12 +17,12 @@ PackagesVersionsPlugin.prototype.apply = function (compiler) {
         } catch (e) {
             stdout = e.stdout;
         }
-        let path;
+        let path2VersionTxt;
         if (compiler.options.entry.app)
-            path = compiler.options.entry.app.match(/(.*)\/.*$/)[1];
+            path2VersionTxt = compiler.options.entry.app.match(/(.*)\/.*$/)[1];
         else
-            path = compiler.options.entry.match(/(.*)\/.*\..*$/)[1];
-        let versionFile = path.join(compiler.options.context, path, 'versions.txt');
+            path2VersionTxt = compiler.options.entry.match(/(.*)\/.*\..*$/)[1];
+        let versionFile = path.join(compiler.options.context, path2VersionTxt, 'versions.txt');
         if (fs.existsSync(versionFile))
             fs.unlinkSync(versionFile);
         fs.writeFileSync(versionFile, new Date().toString() + '\n' + stdout)

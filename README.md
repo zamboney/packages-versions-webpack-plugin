@@ -33,6 +33,9 @@ this plugin can be using in the code using `raw-loader` like so
 
 # version releases
 
+## 1.0.4
+* bug fix, change `path` to `path2VersionTxt`
+
 ## 1.0.3 
 
 * add support to Angular2, if there is an `entry.app` then put the `version.txt` there.
