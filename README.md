@@ -33,6 +33,9 @@ this plugin can be using in the code using `raw-loader` like so
 
 # version releases
 
+## 1.0.5
+* create the `versions.txt` only on the creating of the plugin (a.k.a. first webpack build)
+
 ## 1.0.4
 * bug fix, change `path` to `path2VersionTxt`
 
